@@ -47,7 +47,7 @@ namespace UniversityManagementSystem.Data
 
             var departments = new Department[]
             {
-                new Department{Name = "English", Budget = 350000, StartDate = DateTime.Parse("2007/09/01"), InstructorID = instructors.Single(i => i.FirstMidName == "Arent").InstructorId},
+                new Department{Name = "English", Budget = 350000, StartDate = DateTime.Parse("2007/09/01"), InstructorID = instructors.Single(i => i.FirstMidName == "Arnet").InstructorId},
                 new Department{Name = "Mathematics", Budget = 10000, StartDate = DateTime.Parse("2007/09/01"), InstructorID = instructors.Single(i => i.FirstMidName == "Dimox").InstructorId},
                 new Department{Name = "Economics", Budget = 350000, StartDate = DateTime.Parse("2007/09/01"), InstructorID = instructors.Single(i => i.FirstMidName == "Musa").InstructorId},
                 new Department{Name = "Engineering", Budget = 350000, StartDate = DateTime.Parse("2007/09/01"), InstructorID = instructors.Single(i => i.FirstMidName == "Joseph").InstructorId},
@@ -77,7 +77,7 @@ namespace UniversityManagementSystem.Data
             var officeAssignments = new OfficeAssignment[]
             {
                new OfficeAssignment{instructorId = instructors.Single(i => i.FirstMidName == "Dimox").InstructorId, Location = "Smith 17"},
-               new OfficeAssignment{instructorId = instructors.Single(i => i.FirstMidName == "Arent").InstructorId, Location = "Gowan 27"},
+               new OfficeAssignment{instructorId = instructors.Single(i => i.FirstMidName == "Arnet").InstructorId, Location = "Gowan 27"},
                new OfficeAssignment{instructorId = instructors.Single(i => i.FirstMidName == "Joseph").InstructorId, Location = "Thompson 304"}
             };
             foreach(OfficeAssignment o in officeAssignments)

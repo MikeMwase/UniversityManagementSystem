@@ -109,13 +109,14 @@ namespace UniversityManagementSystem.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            migrationBuilder.Sql("INSERT INTO dbo.Department(Name, Budget, StartDate) Values ('Temp', 0.00, GETDATE())");
+            migrationBuilder.Sql("INSERT INTO dbo.Department (Name,Budget,StartDate) values ('Temp',30000,GETDATE())");
 
             migrationBuilder.AddColumn<int>(
                 name: "DepartmentId",
                 table: "Course",
                 nullable: false,
                 defaultValue: 1);
+
 
             migrationBuilder.CreateTable(
                 name: "OfficeAssignment",

@@ -10,7 +10,7 @@ using UniversityManagementSystem.Data;
 namespace UniversityManagementSystem.Migrations
 {
     [DbContext(typeof(UniversityContext))]
-    [Migration("20241110180713_ComplexDataModel")]
+    [Migration("20241210154609_ComplexDataModel")]
     partial class ComplexDataModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
